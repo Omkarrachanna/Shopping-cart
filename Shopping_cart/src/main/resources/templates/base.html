@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-          th:fragment="layout(content)">
+<html lang="en"
+	  xmlns:th="http://www.thymeleaf.org"
+	  th:fragment="layout(content)">
+
 <head>
-	<meta charset="ISO-8859-1">
-<title>Inser title here</title>
+	<meta charset="UTF-8">
+	<title>Layout</title>
 </head>
+
 <body>
+
 <h1>Navbar</h1>
-<div th:replace="$(content)"></div>
+
+<div th:replace="${content}"></div>
+
 </body>
-</html> 
+</html>
